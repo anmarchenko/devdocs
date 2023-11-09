@@ -12,6 +12,9 @@ require 'active_support/core_ext'
 require 'active_support/testing/assertions'
 require 'rr'
 
+require "datadog/ci"
+require "ddtrace/autoinstrument"
+
 Dir[File.dirname(__FILE__) + '/support/*.rb'].each do |file|
   autoload File.basename(file, '.rb').camelize, file
 end
@@ -20,6 +23,8 @@ ActiveSupport::TestCase.test_order = :random
 
 class MiniTest::Spec
   include ActiveSupport::Testing::Assertions
+
+  # parallelize_me!
 
   module DSL
     def context(*args, &block)
@@ -44,4 +49,10 @@ end
 
 Minitest.after_run do
   rm_tmp
+end
+
+Datadog.configure do |c|
+  c.service = "devdocs"
+  c.ci.enabled = true
+  c.ci.instrument :minitest
 end

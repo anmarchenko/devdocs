@@ -12,3 +12,4 @@ docs/**/*
 *.tar.bz2
 *.tar.gz
 *.zip
+/test.rb

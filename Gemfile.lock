@@ -1,3 +1,21 @@
+GIT
+  remote: https://github.com/DataDog/dd-trace-rb.git
+  revision: 687661d3ed674513445b845cdfdc992c3ad9466e
+  ref: master
+  specs:
+    ddtrace (1.16.1)
+      datadog-ci (~> 0.3.0)
+      debase-ruby_core_source (= 3.2.2)
+      libdatadog (~> 5.0.0.1.0)
+      libddwaf (~> 1.14.0.0.0)
+      msgpack
+
+PATH
+  remote: ../datadog-ci-rb
+  specs:
+    datadog-ci (0.3.0)
+      msgpack
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -20,6 +38,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.10)
     daemons (1.4.1)
+    debase-ruby_core_source (3.2.2)
     erubi (1.12.0)
     ethon (0.16.0)
       ffi (>= 1.15.0)
@@ -45,9 +64,13 @@ GEM
       image_optim (~> 0.19)
     image_size (3.2.0)
     in_threads (1.6.0)
+    libdatadog (5.0.0.1.0)
+    libddwaf (1.14.0.0.0)
+      ffi (~> 1.0)
     method_source (1.0.0)
     mini_portile2 (2.8.4)
     minitest (5.18.1)
+    msgpack (1.7.2)
     multi_json (1.15.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
@@ -147,6 +170,8 @@ DEPENDENCIES
   browser
   chunky_png
   coffee-script
+  datadog-ci!
+  ddtrace!
   erubi
   html-pipeline
   image_optim

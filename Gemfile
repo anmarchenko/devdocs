@@ -51,6 +51,9 @@ group :test do
   gem 'minitest'
   gem 'rack-test', require: false
   gem 'rr', require: false
+
+  gem "datadog-ci", :path => "../datadog-ci-rb"
+  gem "ddtrace", :github => "DataDog/dd-trace-rb", :ref => "master"
 end
 
 if ENV['SELENIUM'] == '1'

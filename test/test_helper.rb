@@ -54,6 +54,6 @@ end
 Datadog.configure do |c|
   c.service = "devdocs"
   c.ci.enabled = true
-  c.ci.experimental_test_suite_level_visibility_enabled = false
+  c.ci.experimental_test_suite_level_visibility_enabled = true
   c.ci.instrument :minitest
 end

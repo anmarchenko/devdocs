@@ -13,7 +13,7 @@ require 'active_support/testing/assertions'
 require 'rr'
 
 require "datadog/ci"
-require "ddtrace/auto_instrument"
+# require "ddtrace/auto_instrument"
 
 Dir[File.dirname(__FILE__) + '/support/*.rb'].each do |file|
   autoload File.basename(file, '.rb').camelize, file

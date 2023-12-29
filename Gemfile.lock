@@ -1,11 +1,11 @@
 GIT
   remote: https://github.com/DataDog/dd-trace-rb.git
-  revision: adc07c4f47071e884aed91d1e55530bf22bb3390
+  revision: 572c94bcdf53d138d85085c56f675865af6354bd
   ref: master
   specs:
-    ddtrace (1.17.0)
-      datadog-ci (~> 0.4.0)
-      debase-ruby_core_source (= 3.2.2)
+    ddtrace (1.18.0)
+      datadog-ci (~> 0.5.0)
+      debase-ruby_core_source (= 3.2.3)
       libdatadog (~> 5.0.0.1.0)
       libddwaf (~> 1.14.0.0.0)
       msgpack
@@ -13,7 +13,7 @@ GIT
 PATH
   remote: ../datadog-ci-rb
   specs:
-    datadog-ci (0.4.1)
+    datadog-ci (0.5.1)
       msgpack
 
 GEM
@@ -38,7 +38,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.10)
     daemons (1.4.1)
-    debase-ruby_core_source (3.2.2)
+    debase-ruby_core_source (3.2.3)
     erubi (1.12.0)
     ethon (0.16.0)
       ffi (>= 1.15.0)
@@ -69,7 +69,7 @@ GEM
       ffi (~> 1.0)
     method_source (1.0.0)
     mini_portile2 (2.8.4)
-    minitest (5.18.1)
+    minitest (5.20.0)
     msgpack (1.7.2)
     multi_json (1.15.0)
     mustermann (3.0.0)

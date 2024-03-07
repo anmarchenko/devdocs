@@ -1,19 +1,19 @@
 GIT
   remote: https://github.com/DataDog/dd-trace-rb.git
-  revision: 916472f9db3d73fa92ad068df7495f25c7a45f86
+  revision: 44b9c6cfb8d19a4aac43c637700d42e970484c2e
   ref: master
   specs:
-    ddtrace (1.19.0)
-      datadog-ci (~> 0.6.0)
+    ddtrace (1.20.0)
+      datadog-ci (~> 0.7.0)
       debase-ruby_core_source (= 3.3.1)
-      libdatadog (~> 5.0.0.1.0)
+      libdatadog (~> 6.0.0.2.0)
       libddwaf (~> 1.14.0.0.0)
       msgpack
 
 PATH
   remote: ../datadog-ci-rb
   specs:
-    datadog-ci (0.6.0)
+    datadog-ci (0.7.0)
       msgpack
 
 GEM
@@ -64,7 +64,7 @@ GEM
       image_optim (~> 0.19)
     image_size (3.2.0)
     in_threads (1.6.0)
-    libdatadog (5.0.0.1.0)
+    libdatadog (6.0.0.2.0)
     libddwaf (1.14.0.0.0)
       ffi (~> 1.0)
     method_source (1.0.0)
@@ -205,7 +205,7 @@ DEPENDENCIES
   yajl-ruby
 
 RUBY VERSION
-   ruby 3.2.2p53
+   ruby 3.3.0p0
 
 BUNDLED WITH
    2.4.6

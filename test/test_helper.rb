@@ -5,15 +5,14 @@ Bundler.require :test
 
 $LOAD_PATH.unshift 'lib'
 
+require "datadog/ci"
+
 require 'minitest/autorun'
 require 'minitest/pride'
 require 'active_support'
 require 'active_support/core_ext'
 require 'active_support/testing/assertions'
 require 'rr'
-
-require "datadog/ci"
-# require "ddtrace/auto_instrument"
 
 Dir[File.dirname(__FILE__) + '/support/*.rb'].each do |file|
   autoload File.basename(file, '.rb').camelize, file

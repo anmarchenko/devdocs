@@ -22,7 +22,6 @@ class Minitest::Spec
   include ActiveSupport::Testing::Assertions
 
   parallelize_me!
-
   module DSL
     def context(*args, &block)
       describe(*args, &block)

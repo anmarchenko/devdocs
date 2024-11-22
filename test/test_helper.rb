@@ -5,8 +5,6 @@ Bundler.require :test
 
 $LOAD_PATH.unshift 'lib'
 
-require "datadog/ci"
-
 require 'minitest/autorun'
 require 'minitest/pride'
 require 'active_support'
@@ -48,10 +46,4 @@ end
 
 Minitest.after_run do
   rm_tmp
-end
-
-Datadog.configure do |c|
-  c.service = "devdocs"
-  c.ci.enabled = true
-  c.ci.instrument :minitest
 end
